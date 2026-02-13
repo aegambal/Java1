@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public long fact(int a) {
+        long fact = 1;
+
+        for (int i = 1; i <= a; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        Solution ob = new Solution();
+
+        long result = ob.fact(a);
+        System.out.print(result);
+
+        s.close();
+    }
+}
